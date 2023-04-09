@@ -1,6 +1,6 @@
 import json
 
-file_name = "Results for CubeMilaoBangladesh2022.json"
+file_name = "Results for CubeCarnivalBangladesh2023.json"
 
 class Competitor:
 	competitor_number_in_events = {}
@@ -127,8 +127,8 @@ cnt = 0
 for competitor in competitors_without_podium_list:
 	cnt += 1
 	print(f'{cnt}. name = {competitor.name} -- sum of rank = {competitor.sum_of_ranks}')
-	for event,rank in competitor.adjusted_rank.items():
-		print(f'\t{event} = {rank}')
+	# for event,rank in competitor.adjusted_rank.items():
+		# print(f'\t{event} = {rank}')
 
 newcomer_cnt = 0
 for newcomer in newcomer_list:
