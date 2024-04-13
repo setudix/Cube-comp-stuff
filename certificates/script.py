@@ -21,4 +21,3 @@ for index, name in enumerate(names):
     cv2.putText(certificate, name, CenterCoordinates, font,
                 font_size, font_color, font_thickness)
     cv2.imwrite(f'./img/{index}.png', certificate)
-    print(f'completed {index + 1}/{len(names)}')
